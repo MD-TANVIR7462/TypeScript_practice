@@ -1,24 +1,14 @@
-function addHandler(num1: number, num2: number): number {
-  return num1 + num2;
-}
-console.log(addHandler(2, 2));
-
-const ArroHandelar = (num1: number, num2: number): number => {
-  return num1 + num2;
-};
-
-console.log(ArroHandelar(2, 2));
-
-const poorUser = {
-  name: "poorUser",
-  balance: 0,
-  addBalance(balance: number): number {
-    return this.balance + balance;
-  },
-};
+//spread oparator //*Spread oparator will make all the elament out form a array
+const bros1 :string[] = ["mir","firoz","mejba"]
+const bros2 :string[] = ["mir","firoz","mejba"]
+ const finalBros = [...bros1,...bros2]
 
 
-const numberArray : number[] = [1,2,3,4,5,6,7,8,9]
-const arrayHandelar = numberArray.map((signleElem:number) :number=> signleElem+signleElem)
+ //rest oparator //*rest will create all the elements in a array
+ const greatFriends = (...friends:string[])=>{
+   console.log(friends)
+ }
 
+ greatFriends("roja","roja","roja","roja")
 
+ 

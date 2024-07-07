@@ -1,28 +1,24 @@
-type Tuser = {
-  readonly id: number;
-  company: "programming Hero"; //literal type
-  country: "Bangladesh" | "India"; //or type
-  firstName: string;
-  middleName?: string; // optional type
-  lastName: string;
+function addHandler(num1: number, num2: number): number {
+  return num1 + num2;
+}
+console.log(addHandler(2, 2));
+
+const ArroHandelar = (num1: number, num2: number): number => {
+  return num1 + num2;
 };
 
-const userDetails: Tuser = {
-  id: 1,
-  company: "programming Hero",
-  country: "India",
-  firstName: "Sakib",
-  middleName: "ahmed",
-  lastName: "sihab",
+console.log(ArroHandelar(2, 2));
+
+const poorUser = {
+  name: "poorUser",
+  balance: 0,
+  addBalance(balance: number): number {
+    return this.balance + balance;
+  },
 };
 
-const user2: Tuser = {
-  id: 2,
-  company: "programming Hero",
-  country: "India",
-  firstName: "Sakib",
-  // middleName : "ahmed",
-  lastName: "sihab"
-};
+
+const numberArray : number[] = [1,2,3,4,5,6,7,8,9]
+const arrayHandelar = numberArray.map((signleElem:number) :number=> signleElem+signleElem)
 
 
