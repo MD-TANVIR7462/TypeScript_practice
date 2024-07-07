@@ -22,5 +22,7 @@ const user2: Tuser = {
   country: "India",
   firstName: "Sakib",
   // middleName : "ahmed",
-  lastName: "sihab",
+  lastName: "sihab"
 };
+
+
