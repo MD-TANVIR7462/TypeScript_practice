@@ -27,9 +27,26 @@ type TUser = {
 };
 type TUser2 = TUser & { PcType: string };
 
-const user: TUser & {PcType:string} = {
-  name: "user1",
-  role: 12,
-  devType: "MERN",
-  PcType: "MERN PC",
-};
+// const user: TUser & {PcType:string} = {
+//   name: "user1",
+//   role: 12,
+//   devType: "MERN",
+//   PcType: "MERN PC",
+// };
+
+{
+type admin<T> = Array<T> 
+type admin2<T> =T 
+const mainAdmin:admin<string> =[ "Admin"]
+const mainAdminNumber:admin<number> =[ 1,2,3]
+const adminDetails:admin2<{name:string;age:25,position:string}> ={
+name:"Tanvir",
+age:25,
+position:"MERN stack Developer"
+}
+}
+
+const genericFunction =<T>(params:T) :T[]=>{
+  return [params]
+
+}
